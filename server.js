@@ -1,8 +1,8 @@
 var express = require('express');//Importing Express
 var app = express();//Getting App From Express
 var fs = require('fs');//Importing File System Module To Access Files
-const server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1' 
-const server_port = process.env.OPENSHIFT_NODEJS_PORT || 10008
+const server_ip_address = process.env.OPENSHIFT_NODEJS_IP
+const server_port = process.env.OPENSHIFT_NODEJS_PORT
 //Routing Request : http://localhost:port/
 app.get('/',function(request,response){
   //Telling Browser That The File Provided Is A HTML File
